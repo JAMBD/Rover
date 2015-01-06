@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/joystick/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ec4486f2571be9d3c027a43e1182b4359668d99f">
+        <dex dex="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-e9a24288bfde2b55d1dbcce7bdac40128df0138e.jar" />
+    </item>
+    <item
+        jar="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/iOIOLibAndroid/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d7bfd010b8d3346a4244a2beacd2381f75d367b8">
+        <dex dex="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-1a8d70792d0163427eddbf125950e283aefc813c.jar" />
+    </item>
+    <item
+        jar="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/iOIOLibAccessory/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="505afd2879e5b907c28b3703e832aeb081d97e3e">
+        <dex dex="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-b4310414a4acf09e97f3b45b3cf53c20999e2447.jar" />
+    </item>
+    <item
+        jar="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/iOIOLibAndroidDevice/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="580ba7814a9409994e99f8ddff499ad82d6f27a5">
+        <dex dex="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-ccdac8249f2fadef875ba5d25e36e70951e24002.jar" />
+    </item>
+    <item
+        jar="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/iOIOLibBT/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2858e94fc9e53cb77154657872d12b3d7e8f5646">
+        <dex dex="/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-ee6a37f780318aabaf9281914b41b945acdd45b0.jar" />
+    </item>
+
+</items>

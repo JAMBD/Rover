@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "ioio.examples.hello"
+        minSdkVersion 16
+        targetSdkVersion 17
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(':iOIOLibBT')
+    compile project(':iOIOLibAccessory')
+    compile project(':iOIOLibAndroid')
+    compile project(':iOIOLibAndroidDevice')
+    compile project(':joystick')
+}

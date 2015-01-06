@@ -1,0 +1,5 @@
+include ':iOIOLibAndroid', ':joystick'
+include ':iOIOLibAccessory'
+include ':iOIOLibAndroidDevice'
+include ':iOIOLibBT'
+include ':helloIOIO'

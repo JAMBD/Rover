@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloIOIO.iml" filepath="$PROJECT_DIR$/HelloIOIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloIOIO/helloIOIO.iml" filepath="$PROJECT_DIR$/helloIOIO/helloIOIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iOIOLibAccessory/iOIOLibAccessory.iml" filepath="$PROJECT_DIR$/iOIOLibAccessory/iOIOLibAccessory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iOIOLibAndroid/iOIOLibAndroid.iml" filepath="$PROJECT_DIR$/iOIOLibAndroid/iOIOLibAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iOIOLibAndroidDevice/iOIOLibAndroidDevice.iml" filepath="$PROJECT_DIR$/iOIOLibAndroidDevice/iOIOLibAndroidDevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iOIOLibBT/iOIOLibBT.iml" filepath="$PROJECT_DIR$/iOIOLibBT/iOIOLibBT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joystick/joystick.iml" filepath="$PROJECT_DIR$/joystick/joystick.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Hello IOIO</string>
+    <string name="hello">Hello, IOIO User!</string>
+</resources>

@@ -1,0 +1,6 @@
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/classes/debug
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-e9a24288bfde2b55d1dbcce7bdac40128df0138e.jar
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-ee6a37f780318aabaf9281914b41b945acdd45b0.jar
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-b4310414a4acf09e97f3b45b3cf53c20999e2447.jar
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-ccdac8249f2fadef875ba5d25e36e70951e24002.jar
+/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/pre-dexed/debug/classes-1a8d70792d0163427eddbf125950e283aefc813c.jar

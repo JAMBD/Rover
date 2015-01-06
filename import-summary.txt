@@ -1,0 +1,67 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From HelloIOIO:
+* build.xml
+* proguard.cfg
+From IOIOLibAccessory:
+* build.xml
+* proguard.cfg
+From IOIOLibAndroid:
+* ant.properties
+* build.xml
+* proguard.cfg
+From IOIOLibAndroidDevice:
+* build.xml
+* proguard.cfg
+From IOIOLibBT:
+* build.xml
+* proguard.cfg
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In IOIOLibAndroid:
+* /Users/johnlam/Downloads/ioio-master/software/IOIOLib/src/ => iOIOLibAndroid/src/main/java/
+* AndroidManifest.xml => iOIOLibAndroid/src/main/AndroidManifest.xml
+* res/ => iOIOLibAndroid/src/main/res/
+* src/ => iOIOLibAndroid/src/main/java/
+In IOIOLibAccessory:
+* AndroidManifest.xml => iOIOLibAccessory/src/main/AndroidManifest.xml
+* res/ => iOIOLibAccessory/src/main/res/
+* src/ => iOIOLibAccessory/src/main/java/
+In IOIOLibAndroidDevice:
+* AndroidManifest.xml => iOIOLibAndroidDevice/src/main/AndroidManifest.xml
+* res/ => iOIOLibAndroidDevice/src/main/res/
+* src/ => iOIOLibAndroidDevice/src/main/java/
+In IOIOLibBT:
+* AndroidManifest.xml => iOIOLibBT/src/main/AndroidManifest.xml
+* res/ => iOIOLibBT/src/main/res/
+* src/ => iOIOLibBT/src/main/java/
+In HelloIOIO:
+* AndroidManifest.xml => helloIOIO/src/main/AndroidManifest.xml
+* res/ => helloIOIO/src/main/res/
+* src/ => helloIOIO/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

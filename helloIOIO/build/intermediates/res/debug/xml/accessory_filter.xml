@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-accessory model="IOIO"/>
+</resources>
+<!-- From: file:/Users/johnlam/AndroidStudioProjects/HelloIOIO/iOIOLibAccessory/src/main/res/xml/accessory_filter.xml --><!-- From: file:/Users/johnlam/AndroidStudioProjects/HelloIOIO/helloIOIO/build/intermediates/exploded-aar/HelloIOIO/iOIOLibAccessory/unspecified/res/xml/accessory_filter.xml -->
