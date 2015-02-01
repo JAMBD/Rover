@@ -36,8 +36,8 @@ public class JoystickView extends View {
 
     public float getVelocity(){
         if(touching){
-            double dx = (firstTouchX - curTouchX);
-            double dy = (firstTouchY - curTouchY);
+            double dx = (firstTouchX - curTouchX)/this.getWidth();
+            double dy = (firstTouchY - curTouchY)/this.getHeight();
             return (float)Math.sqrt(dx * dx + dy * dy);
         }
         return 0f;

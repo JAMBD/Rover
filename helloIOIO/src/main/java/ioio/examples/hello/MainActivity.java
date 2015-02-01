@@ -15,6 +15,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
+import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,7 +54,10 @@ public class MainActivity extends IOIOActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		button_ = (ToggleButton) findViewById(R.id.button);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+        button_ = (ToggleButton) findViewById(R.id.button);
 
         sp1_ = (TextView) findViewById(R.id.speed1);
         sp2_ = (TextView) findViewById(R.id.speed2);
@@ -92,7 +96,6 @@ public class MainActivity extends IOIOActivity {
         private PID pid2_;
         private PID pid3_;
         private PID pid4_;
-        private PowerManager.WakeLock wl;
 
 		/**
 		 * Called every time a connection with IOIO has been established.
@@ -119,9 +122,6 @@ public class MainActivity extends IOIOActivity {
                 e.printStackTrace();
             }
             enableUi(true);
-            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-            wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "IOIO running");
-            wl.acquire();
 		}
 
 		/**
@@ -140,15 +140,18 @@ public class MainActivity extends IOIOActivity {
             try {
                 float driveVel = val_.getVelocity();
                 float driveAng = val_.getAngle();
-                pid1_.setSpeed(driveVel+(float)Math.sin((double)driveAng));
-                pid2_.setSpeed(driveVel+(float)Math.sin((double)driveAng));
-                pid3_.setSpeed(driveVel-(float)Math.sin((double)driveAng));
-                pid4_.setSpeed(driveVel-(float)Math.sin((double)driveAng));
+
+                float left = driveVel * (float)Math.cos((double)driveAng) + driveVel * (float)Math.sin((double)driveAng);
+                float right = -driveVel * (float)Math.cos((double)driveAng) + driveVel * (float)Math.sin((double)driveAng);
+                pid1_.setSpeed(left);
+                pid2_.setSpeed(right);
+                pid3_.setSpeed(-left);
+                pid4_.setSpeed(-right);
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            speed1 = pid1_.getSpeed();
-            speed2 = pid2_.getSpeed();
+            speed1 = -pid1_.getSpeed();
+            speed2 = -pid2_.getSpeed();
             speed3 = pid3_.getSpeed();
             speed4 = pid4_.getSpeed();
 			Thread.sleep(10);
@@ -161,7 +164,6 @@ public class MainActivity extends IOIOActivity {
 		 */
 		@Override
 		public void disconnected() {
-            wl.release();
 			enableUi(false);
 			toast("IOIO disconnected");
 		}
